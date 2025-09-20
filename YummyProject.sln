@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YummyProject.API", "YummyProject\YummyProject.API.csproj", "{900DDE94-D863-4CAC-A961-FC3DCBE621B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YummyProject.IU", "YummyProject.IU\YummyProject.IU.csproj", "{4BE1B44A-3AA1-4A47-BE40-C2B7B3C537BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{900DDE94-D863-4CAC-A961-FC3DCBE621B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{900DDE94-D863-4CAC-A961-FC3DCBE621B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{900DDE94-D863-4CAC-A961-FC3DCBE621B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{900DDE94-D863-4CAC-A961-FC3DCBE621B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BE1B44A-3AA1-4A47-BE40-C2B7B3C537BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BE1B44A-3AA1-4A47-BE40-C2B7B3C537BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BE1B44A-3AA1-4A47-BE40-C2B7B3C537BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BE1B44A-3AA1-4A47-BE40-C2B7B3C537BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9304CCC-67A2-42E8-B5E9-E75167D83684}
+	EndGlobalSection
+EndGlobal
