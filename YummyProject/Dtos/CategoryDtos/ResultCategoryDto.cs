@@ -1,11 +1,9 @@
-﻿namespace YummyProject.API.Entities.Models
+﻿namespace YummyProject.API.Dtos.CategoryDtos
 {
-    public class Category
+    public class ResultCategoryDto
     {
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public string CategoryIconUrl { get; set; }
-        public List<Product> Products { get; set; }
-
     }
 }

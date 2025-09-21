@@ -1,5 +1,10 @@
+
+using FluentValidation;
 using Microsoft.OpenApi.Models;
+using System.Reflection;
 using YummyProject.API.Context;
+using YummyProject.API.Entities.Models;
+using YummyProject.API.ValidationRules;
 
 namespace YummyProject
 {
@@ -8,7 +13,15 @@ namespace YummyProject
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            // DbContext eklendi
             builder.Services.AddDbContext<ApiContext>();
+            // AutoMapper'ý eklendi
+            builder.Services.AddAutoMapper(x => 
+            x.AddMaps(Assembly.GetExecutingAssembly()));
+
+            // FluentValidation eklendi
+            builder.Services.AddScoped<IValidator<Product>, ProductValidation>();
+
 
             // Servisleri ekle
             builder.Services.AddControllers();
