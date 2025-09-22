@@ -64,6 +64,7 @@ namespace YummyProject.API.Mapping
             CreateMap<Product, UpdateProductDto>().ReverseMap();
             CreateMap<Product, GetByIdProductDto>().ReverseMap();
             CreateMap<Product, ResultProductDto>().ReverseMap();
+            CreateMap<Product, GetProductWithCategory>().ForMember(x => x.CategoryName, y => y.MapFrom(z => z.Category.CategoryName)).ReverseMap();
 
 
             CreateMap<Reservation, CreateReservationDto>().ReverseMap();

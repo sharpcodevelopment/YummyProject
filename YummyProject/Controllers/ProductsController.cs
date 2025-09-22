@@ -2,6 +2,7 @@
 using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using YummyProject.API.Context;
 using YummyProject.API.Dtos.ProductDtos;
 using YummyProject.API.Entities.Models;
@@ -38,6 +39,14 @@ namespace YummyProject.API.Controllers
         {
             var value = _context.Products.Find(id);
             return Ok(_mapper.Map<GetByIdProductDto>(value));
+        }
+
+        [HttpGet]
+        [Route("GetProductWithCategory")]
+        public IActionResult GetProductWithCategory()
+        {
+            var value = _context.Products.Include(x=>x.Category).ToList();
+            return Ok(_mapper.Map<List<GetProductWithCategory>>(value));
         }
 
         [HttpPost]
