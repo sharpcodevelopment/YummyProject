@@ -5,6 +5,8 @@ builder.Services.AddRazorPages();
 
 // Eðer API veya MVC Controller kullanýyorsanýz, bu satýr kalabilir:
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient();
+
 
 var app = builder.Build();
 

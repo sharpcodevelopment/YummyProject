@@ -19,6 +19,7 @@ namespace YummyProject
             builder.Services.AddAutoMapper(x => 
             x.AddMaps(Assembly.GetExecutingAssembly()));
 
+            
             // FluentValidation eklendi
             builder.Services.AddScoped<IValidator<Product>, ProductValidation>();
 
